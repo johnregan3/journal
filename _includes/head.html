@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" amp="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Journal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//cdn.ampproject.org">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//s.w.org">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script type="text/javascript" src="https://cdn.ampproject.org/v0.js" async></script>
+    <script src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async="" custom-element="amp-sidebar"></script>
+    <script src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async="" custom-element="amp-animation"></script>
+    <script src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async=""
+        custom-element="amp-position-observer"></script>
+
+    {% include style.html %}
+
+    <link crossorigin="anonymous" rel="stylesheet" id="median-google-fonts-css"
+        href="https://fonts.googleapis.com/css?family=Signika%3A300%2C400%2C600%7CMartel%3A400%2C600%2C700&amp;ver=5.1.1"
+        type="text/css" media="all">
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+</head>
+
+<body class="home page-template-default page page-id-49">
+    {% include sidebar.html %}
+    <div id="scroll-to-marker">
+        <amp-position-observer on="enter:hideScrollTrigger.start; exit:showScrollTrigger.start" layout="nodisplay">
+        </amp-position-observer>
+    </div>
+    <header id="#masthead" class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 site-header__left">
+                    <h1 class="site-header__title">
+                        <a href="/" title="Journal">Journal</a>
+                    </h1>
+                </div>
+
+                <div class="col-sm-12 col-md-8 site-header__right">
+                    <button on="tap:header-menu.toggle" class="trigger-button trigger-button--menu">
+                        <i aria-hidden="false" class="far fa-bars" title="Open menu"><span class="sr-only">Open
+                                Menu</span></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>

@@ -1,0 +1,28 @@
+<amp-sidebar id="header-menu" layout="nodisplay" side="right">
+    <button class="amp-close-image trigger-button trigger-button--menu-close" on="tap:header-menu.close" role="button"
+        tabindex="0">
+        <i aria-hidden="true" class="fas fa-times" title="Close menu"><span class="sr-only">Close Menu</span></i>
+    </button>
+    <h3>Menu</h3>
+    <div class="menu-primary-container">
+        <ul id="menu-primary" class="header-menu ul--lines">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/" title="Home">Home</a>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about.html"
+                    title="About">About</a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/all-posts.html"
+                    title="All Posts">All Posts</a></li>
+        </ul>
+    </div>
+
+    <h3>Recent</h3>
+    <ul class="ul--lines">
+        {% for post in site.posts limit:5 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <div class="copyright">
+        ©2019, Mixing Metaphors.
+    </div>
+
+</amp-sidebar>
