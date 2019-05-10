@@ -11,6 +11,13 @@
           <div class="post__body">
             {{ content }}
           </div>
+          <div>
+            {% if page.tags != empty %}
+            {% for tag in page.tags %}
+            <a href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+            {% endfor %}
+            {% endif %}
+          </div>
         </article>
       </div>
     </div>
