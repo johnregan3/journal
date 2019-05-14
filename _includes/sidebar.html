@@ -1,3 +1,4 @@
+{% assign items = site.books | sort: 'weight' %}
 <amp-sidebar id="header-menu" layout="nodisplay" side="right">
     <button class="amp-close-image trigger-button trigger-button--menu-close" on="tap:header-menu.close" role="button"
         tabindex="0">
@@ -6,28 +7,50 @@
     <h3>Menu</h3>
     <div class="menu-primary-container">
         <ul id="menu-primary" class="header-menu ul--lines">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/journal/"
-                    title="Home">Home</a>
+            <li><a href="/" title="Home">Home</a>
             </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/journal/about.html"
-                    title="About">About</a></li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/journal/all-posts.html"
-                    title="All Posts">All Posts</a></li>
+            <li><a href="/about.html" title="About">About</a></li>
+            <li><a href="/books/" title="All Posts">All
+                    Book Notes</a></li>
         </ul>
     </div>
 
-    <h3>Recent</h3>
-    <ul class="ul--lines">
-        {% for post in site.posts limit:5 %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
+    <h3>You Are Here</h3>
+    <div class="menu-primary-container">
+        <ul class="ul--lines">
+            <li><a href="{{page.url}}">{{page.title}}</a></li>
 
+
+
+            {% for item in items %}
+            {% if item.tags contains 'single-chapter' and item.chapter_name contains page.chapter_name %}
+            <li><a href="{{item.url}}">{{item.title}}</a></li>
+            {% endif %}
+            {% endfor %}
+
+            {% for item in items %}
+            {% if item.tags contains 'single-book' and item.book_name contains page.book_name %}
+            <li><a href="{{item.url}}">{{item.title}}</a></li>
+            {% endif %}
+            {% endfor %}
+
+            {% if page.collection == 'books' %}
+            <li><a href="/books/">Book Notes</a></li>
+            {% endif %}
+
+
+
+
+        </ul>
+    </div>
+
+    <!--
     <h3>Selected Tags</h3>
     <ul class="ul--lines">
         <li><a href="/tags/#john">John</a></li>
         <li><a href="/tags/">All Tags</a></li>
     </ul>
+-->
     <div class="copyright">
         ©2019, Journal.
     </div>

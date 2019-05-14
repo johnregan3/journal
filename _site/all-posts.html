@@ -236,6 +236,11 @@
     margin-bottom: 30px
   }
 
+  ul.no-bullets,
+  ul.no-bullets ul {
+    list-style-type: none;
+  }
+
   ul ul {
     margin-bottom: 0
   }
@@ -687,6 +692,10 @@
     text-decoration: none
   }
 
+  small {
+    font-size: 1.6rem;
+  }
+
   .site-header {
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     padding: 2rem 0;
@@ -743,10 +752,19 @@
     margin-bottom: 4rem
   }
 
-  .post__body {
+  .post__body,
+  .post__breadcrumbs {
     font-family: Martel, Times, "Times New Roman", serif;
     font-size: 1.83rem;
     line-height: 1.75em
+  }
+
+  .post__breadcrumbs {
+    margin-bottom: 2rem;
+  }
+
+  .post__breadcrumbs span {
+    padding: 0 0.5em;
   }
 
   .post__body>p {
@@ -766,6 +784,10 @@
   .post--single h3 {
     line-height: 2.5rem;
     margin-bottom: 3rem
+  }
+
+  .post--single h3.list-title {
+    margin-bottom: 0;
   }
 
   button {
@@ -866,7 +888,8 @@
 </head>
 
 <body class="home page-template-default page page-id-49">
-    <amp-sidebar id="header-menu" layout="nodisplay" side="right">
+    
+<amp-sidebar id="header-menu" layout="nodisplay" side="right">
     <button class="amp-close-image trigger-button trigger-button--menu-close" on="tap:header-menu.close" role="button"
         tabindex="0">
         <i aria-hidden="true" class="fas fa-times" title="Close menu"><span class="sr-only">Close Menu</span></i>
@@ -874,30 +897,68 @@
     <h3>Menu</h3>
     <div class="menu-primary-container">
         <ul id="menu-primary" class="header-menu ul--lines">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/journal/"
-                    title="Home">Home</a>
+            <li><a href="/" title="Home">Home</a>
             </li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/journal/about.html"
-                    title="About">About</a></li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/journal/all-posts.html"
-                    title="All Posts">All Posts</a></li>
+            <li><a href="/about.html" title="About">About</a></li>
+            <li><a href="/books/" title="All Posts">All
+                    Book Notes</a></li>
         </ul>
     </div>
 
-    <h3>Recent</h3>
-    <ul class="ul--lines">
-        
-        <li><a href="/2019/05/10/john-i-vi-vii.html">John 1&#58;6-8&#58; John the Baptist</a></li>
-        
-        <li><a href="/2019/05/08/john-i-i-v.html">John 1&#58;1-5&#58; The Word</a></li>
-        
-    </ul>
+    <h3>You Are Here</h3>
+    <div class="menu-primary-container">
+        <ul class="ul--lines">
+            <li><a href="/all-posts.html">All Posts</a></li>
 
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+
+
+
+
+        </ul>
+    </div>
+
+    <!--
     <h3>Selected Tags</h3>
     <ul class="ul--lines">
         <li><a href="/tags/#john">John</a></li>
         <li><a href="/tags/">All Tags</a></li>
     </ul>
+-->
     <div class="copyright">
         ©2019, Journal.
     </div>
@@ -940,7 +1001,11 @@
 
   <ul class="ul--lines">
     
-    <li><a href="/2019/05/10/john-i-vi-vii.html">John 1&#58;6-8&#58; John the Baptist</a></li>
+    <li><a href="/2019/05/12/can-we-keep-law.html">Can We Keep God's Law?</a></li>
+    
+    <li><a href="/2019/05/11/john-i-ix-xiii.html">John I Ix Xiii</a></li>
+    
+    <li><a href="/2019/05/10/john-i-vi-viii.html">John 1&#58;6-8&#58; John the Baptist</a></li>
     
     <li><a href="/2019/05/08/john-i-i-v.html">John 1&#58;1-5&#58; The Word</a></li>
     

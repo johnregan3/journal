@@ -217,6 +217,11 @@
     margin-bottom: 30px
   }
 
+  ul.no-bullets,
+  ul.no-bullets ul {
+    list-style-type: none;
+  }
+
   ul ul {
     margin-bottom: 0
   }
@@ -668,6 +673,10 @@
     text-decoration: none
   }
 
+  small {
+    font-size: 1.6rem;
+  }
+
   .site-header {
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     padding: 2rem 0;
@@ -724,10 +733,19 @@
     margin-bottom: 4rem
   }
 
-  .post__body {
+  .post__body,
+  .post__breadcrumbs {
     font-family: Martel, Times, "Times New Roman", serif;
     font-size: 1.83rem;
     line-height: 1.75em
+  }
+
+  .post__breadcrumbs {
+    margin-bottom: 2rem;
+  }
+
+  .post__breadcrumbs span {
+    padding: 0 0.5em;
   }
 
   .post__body>p {
@@ -747,6 +765,10 @@
   .post--single h3 {
     line-height: 2.5rem;
     margin-bottom: 3rem
+  }
+
+  .post--single h3.list-title {
+    margin-bottom: 0;
   }
 
   button {

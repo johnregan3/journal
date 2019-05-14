@@ -1,0 +1,44 @@
+{% include head.html %}
+
+{% assign items = site.books | sort: 'weight' %}
+
+<main id="main">
+    <div id="primary" class="container-fluid">
+        <div class="row justify-content-center post__item">
+            <div class="col-12 col-md-10 col-xl-6">
+                <article class="post--single page type-page status-publish hentry">
+                    <header class="post__header">
+                        <p class="post__breadcrumbs"><small><a href="/books/">Book Notes</a>{% for item in items %}
+                                {% if item.tags contains 'single-book' and item.book_name contains page.book_name %}
+                                <span>&raquo;</span> <a href="{{item.url}}">{{item.title}}</a>
+                                {% endif %}
+                                {% endfor %}
+
+                                {% for item in items %}
+                                {% if item.tags contains 'single-chapter' and item.chapter_name contains page.chapter_name %}
+                                <span>&raquo;</span> <a href="{{item.url}}">{{item.title}}</a>
+                                {% endif %}
+                                {% endfor %}</small></p>
+                        <h1 class="post__title">{{ page.title }}</h1>
+                    </header>
+                    <div class="post__body">
+
+                        <h3 class="list-title">{{ page.title }} Notes </h3>
+
+                        <ul class="no-bullets">
+                            {% for passage in items %}
+                            {% if passage.tags contains 'passage' and passage.chapter_name contains page.title %}
+                            <li><a href="{{passage.url}}">{{passage.title}}</a></li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+
+                        {{ page.content }}
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include foot.html %}

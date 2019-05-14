@@ -1,3 +1,6 @@
 include:
   - "_img"
   - "_fonts"
+collections:
+  books:
+    output: true
