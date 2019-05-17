@@ -40,7 +40,7 @@ The purpose of this snippet is to list all the tags you have in your site.
 {% endcomment %}
 <ul>
     {% for tag in tags %}
-    <li><a href="#{{ tag | slugify }}"> {{ tag }} </a></li>
+    <li><a href="#{{ tag | slugify }}"> {{ tag | capitalize }} </a></li>
     {% endfor %}
 </ul>
 
@@ -50,7 +50,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 =======================
 {% endcomment %}
 {% for tag in tags %}
-<h3 id="{{ tag | slugify }}">{{ tag }}</h3>
+<h3 id="{{ tag | slugify }}">{{ tag | capitalize }}</h3>
 <ul>
     {% for post in site.posts %}
     {% if post.tags contains tag %}
