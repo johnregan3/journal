@@ -25,6 +25,12 @@
                     </header>
                     <div class="post__body">
                         {{ content }}
+
+                        {% if page.creation_date %}
+                        <div class="post__date">
+                            <small>Written {{page.creation_date}}</small>
+                        </div>
+                        {% endif %}
                     </div>
                 </article>
             </div>
