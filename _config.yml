@@ -1,6 +1,7 @@
 include:
   - "_img"
   - "_fonts"
+  - "_css"
 collections:
   books:
     output: true

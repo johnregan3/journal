@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Journal</title>
+    <title>Journal - Sins of the Body</title>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link rel="dns-prefetch" href="//cdn.ampproject.org">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -26,23 +26,6 @@
         Total included size: 10,245 bytes (14% of 71,154 total after tree shaking)
         -->
 <style amp-custom>
-  p.has-drop-cap:not(:focus):first-letter {
-    float: left;
-    font-size: 8.4em;
-    line-height: .68;
-    font-weight: 100;
-    margin: .05em .1em 0 0;
-    text-transform: uppercase;
-    font-style: normal
-  }
-
-  p.has-drop-cap:not(:focus):after {
-    content: "";
-    display: table;
-    clear: both;
-    padding-top: 14px
-  }
-
   html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -277,11 +260,6 @@
     padding-right: 15px
   }
 
-  .row {
-    margin-left: -15px;
-    margin-right: -15px
-  }
-
   .col-md-8,
   .col-md-10,
   .col-sm-12 {
@@ -394,6 +372,8 @@
   .col-12,
   .col-md-10,
   .col-md-8,
+  .col-md-6,
+  .col-md-3,
   .col-sm-12,
   .col-xl-6 {
     position: relative;
@@ -416,6 +396,16 @@
   }
 
   @media (min-width:768px) {
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%
+    }
+
+    .col-md-3 {
+      flex: 0 0 25%;
+      max-width: 25%
+    }
+
     .col-md-8 {
       flex: 0 0 66.66667%;
       max-width: 66.66667%
@@ -818,7 +808,7 @@
 </style>
 
     <link crossorigin="anonymous" rel="stylesheet" id="median-google-fonts-css"
-        href="https://fonts.googleapis.com/css?family=Signika%3A300%2C400%2C600%7CMartel%3A400%2C600%2C700&amp;ver=5.1.1"
+        href="https://fonts.googleapis.com/css?family=Signika%3A300%2C400%2C600%7CMartel%3A400%2C600%2C700&display-swap&amp;ver=5.1.1"
         type="text/css" media="all">
 
     <style amp-boilerplate>
@@ -904,9 +894,8 @@
             <li><a href="/" title="Home">Home</a>
             </li>
             <li><a href="/about.html" title="About">About</a></li>
-            <li><a href="/books/" title="All Book Notes">All Book Notes</a></li>
+            <li><a href="/books/" title="All Book Notes">Book Notes</a></li>
             <li><a href="/posts/" title="All Posts">Posts</a></li>
-            <li><a href="/tags/" title="All Tags">Tags</a></li>
         </ul>
     </div>
 
@@ -915,61 +904,107 @@
         <ul class="ul--lines">
             <li><a href="/2019/05/17/body.html">Sins of the Body</a></li>
 
-
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
             
             
 
             
+
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
             
             
             
 
             
 
+            
 
+            
+            
+            
 
+            
 
+            
+
+            
+            
+            
+
+            
+
+            
+
+            
+            
+            
+
+            
+
+            
+
+            
+            
+            
+
+            
+
+            
+
+            
+            
+            
+
+            
+
+            
+
+            
+            
+            
+
+            
+
+            
+
+            
+            
+            
+
+            
+
+            
+
+            
+            
+            
+
+            
+
+            
+
+            
+            
+
+            
+
+            
+            <li><a href="/posts/">Posts</a></li>
+            
         </ul>
     </div>
 
-    <!--
-    <h3>Selected Tags</h3>
-    <ul class="ul--lines">
-        <li><a href="/tags/#john">John</a></li>
-        <li><a href="/tags/">All Tags</a></li>
-    </ul>
--->
+    <h3>Tags</h3>
+    <div class="menu-primary-container">
+        <ul class="ul--lines">
+            <li><a href="/tags-post/" title="Post Tags">Post Tags</a></li>
+            <li><a href="/tags-book/" title="Book Tags">Book Tags</a></li>
+            <li><a href="/tags-people/" title="People Tags">People Tags</a></li>
+        </ul>
+    </div>
+
     <div class="copyright">
-        ©2019, Journal.
+        ©2019, John Regan.
     </div>
 
 </amp-sidebar>

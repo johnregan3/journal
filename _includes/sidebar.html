@@ -10,9 +10,8 @@
             <li><a href="/" title="Home">Home</a>
             </li>
             <li><a href="/about.html" title="About">About</a></li>
-            <li><a href="/books/" title="All Book Notes">All Book Notes</a></li>
+            <li><a href="/books/" title="All Book Notes">Book Notes</a></li>
             <li><a href="/posts/" title="All Posts">Posts</a></li>
-            <li><a href="/tags/" title="All Tags">Tags</a></li>
         </ul>
     </div>
 
@@ -21,17 +20,17 @@
         <ul class="ul--lines">
             <li><a href="{{page.url}}">{{page.title}}</a></li>
 
-
-
             {% for item in items %}
-            {% if item.tags contains 'single-chapter' and item.chapter_name contains page.chapter_name %}
-            <li><a href="{{item.url}}">{{item.title}}</a></li>
+            {% if item.title != page.title %}
+
+            {% if item.tags contains 'single chapter' and item.chapter_name contains page.chapter_name %}
+            <li><a href="{{item.url}}">Chapter: {{item.title}}2</a></li>
             {% endif %}
-            {% endfor %}
 
-            {% for item in items %}
-            {% if item.tags contains 'single-book' and item.book_name contains page.book_name %}
-            <li><a href="{{item.url}}">{{item.title}}</a></li>
+            {% if item.tags contains 'single book' and item.book_name contains page.book_name %}
+            <li><a href="{{item.url}}">Book: {{item.title}}</a></li>
+            {% endif %}
+
             {% endif %}
             {% endfor %}
 
@@ -39,21 +38,23 @@
             <li><a href="/books/">Book Notes</a></li>
             {% endif %}
 
-
-
-
+            {% if page.collection == 'posts' %}
+            <li><a href="/posts/">Posts</a></li>
+            {% endif %}
         </ul>
     </div>
 
-    <!--
-    <h3>Selected Tags</h3>
-    <ul class="ul--lines">
-        <li><a href="/tags/#john">John</a></li>
-        <li><a href="/tags/">All Tags</a></li>
-    </ul>
--->
+    <h3>Tags</h3>
+    <div class="menu-primary-container">
+        <ul class="ul--lines">
+            <li><a href="/tags-post/" title="Post Tags">Post Tags</a></li>
+            <li><a href="/tags-book/" title="Book Tags">Book Tags</a></li>
+            <li><a href="/tags-people/" title="People Tags">People Tags</a></li>
+        </ul>
+    </div>
+
     <div class="copyright">
-        ©2019, Journal.
+        ©2019, John Regan.
     </div>
 
 </amp-sidebar>

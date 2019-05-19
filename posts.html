@@ -2,6 +2,9 @@
 layout: page
 title: All Posts
 ---
+
+{% include description-posts.html %}
+
 <section class="archive-post-list">
 
   {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
