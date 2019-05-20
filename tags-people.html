@@ -40,7 +40,10 @@ The purpose of this snippet is to list all the tags you have in your site.
 {% endcomment %}
 <ul>
     {% for tag in tags %}
-    <li><a href="#{{ tag | slugify }}"> {{ tag | capitalize }} </a></li>
+
+    {% assign words = tag | split: ' ' %}
+    {% capture titlecase %}{% for word in words %}{{ word | capitalize }} {% endfor %}{% endcapture %}
+    <li><a href="#{{ tag | slugify }}"> {{ titlecase }} </a></li>
     {% endfor %}
 </ul>
 
@@ -50,10 +53,18 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 =======================
 {% endcomment %}
 {% for tag in tags %}
-<h3 id="{{ tag | slugify }}">{{ tag | capitalize }}</h3>
+
+{% assign words = tag | split: ' ' %}
+{% capture tagtitlecase %}
+{% for word in words %}
+{{ word | capitalize }}&nbsp;
+{% endfor %}
+{% endcapture %}
+<h3 id="{{ tag | slugify }}">{{ tagtitlecase }}</h3>
 <ul>
     {% for post in site.books %}
     {% if post.people contains tag %}
+
     <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
     </li>

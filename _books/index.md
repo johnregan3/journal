@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Books
+title: Book Notes
 weight: 1
 tags: [archive]
 ---

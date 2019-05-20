@@ -9,13 +9,13 @@
                 <article class="post--single page type-page status-publish hentry">
                     <header class="post__header">
                         <p class="post__breadcrumbs"><small><a href="/books/">Book Notes</a>{% for item in items %}
-                                {% if item.tags contains 'single-book' and item.book_name contains page.book_name %}
+                                {% if item.tags contains 'single book' and item.book_name contains page.book_name %}
                                 <span>&raquo;</span> <a href="{{item.url}}">{{item.title}}</a>
                                 {% endif %}
                                 {% endfor %}
 
                                 {% for item in items %}
-                                {% if item.tags contains 'single-chapter' and item.chapter_name contains page.chapter_name %}
+                                {% if item.tags contains 'single chapter' and item.chapter_name contains page.chapter_name %}
                                 <span>&raquo;</span> <a href="{{item.url}}">{{item.title}}</a>
                                 {% endif %}
                                 {% endfor %}

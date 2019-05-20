@@ -20,9 +20,10 @@ title: Home
       <h3>Book Notes</h3>
       {% include description-books.html %}
       <ul>
+        <li><a href="/books/">All Book Notes</a></li>
         {% assign items = site.books | sort: 'weight' %}
         {% for item in items %}
-        {% if item.tags contains 'archive' %}
+        {% if item.tags contains 'single book' %}
         <li><a href="{{item.url}}">{{item.title}}</a><br></li>
         {% endif %}
         {% endfor %}
