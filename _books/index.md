@@ -8,7 +8,7 @@ tags: [archive]
 
 {% include description-books.html %}
 
-See also <a href="/tags-book/" title="Book Tags">Book Tags</a> and <a href="/tags-people/" title="People Tags">People Tags</a>.
+See also <a href="/tags-book/" title="Book Tags">Book Tags</a>, <a href="/tags-people/" title="People Tags">People</a>, and <a href="/tags-locations/" title="Location Tags">Locations</a>.
 
 ## All Book Notes
 

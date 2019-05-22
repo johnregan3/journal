@@ -210,13 +210,20 @@
     font-size: 24px
   }
 
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
   p {
     margin: 0 0 10px
   }
 
   ul {
     margin-top: 0;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    padding-left: 20px;
   }
 
   ul.no-bullets,
@@ -367,6 +374,13 @@
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px
+  }
+
+  @media (min-width:768px) {
+    .align-items-md-stretch {
+      -ms-flex-align: stretch !important;
+      align-items: stretch !important;
+    }
   }
 
   .col-12,
@@ -693,7 +707,6 @@
   .site-header {
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     padding: 2rem 0;
-    margin-bottom: 6rem;
     background: #fafafa
   }
 
@@ -722,6 +735,13 @@
 
   .site-header__title a:hover {
     color: #3876bd
+  }
+
+  .site-image {
+    margin-bottom: 6rem;
+    background: url('/assets/img/header.jpg') bottom right no-repeat;
+    background-size: cover;
+    height: 200px;
   }
 
   .post__item {
@@ -804,6 +824,16 @@
     background: #fff;
     border-color: rgba(0, 0, 0, .54);
     transition: color .2s ease-in-out, border-color .2s ease-in-out
+  }
+
+  .two-columns {
+    column-count: 2;
+    column-gap: 1%;
+  }
+
+  .three-columns {
+    column-count: 3;
+    column-gap: 1%;
   }
 </style>
 
@@ -1007,6 +1037,14 @@
 
             
             
+            
+
+            
+
+            
+
+            
+            
 
             
 
@@ -1019,7 +1057,8 @@
         <ul class="ul--lines">
             <li><a href="/tags-post/" title="Post Tags">Post Tags</a></li>
             <li><a href="/tags-book/" title="Book Tags">Book Tags</a></li>
-            <li><a href="/tags-people/" title="People Tags">People Tags</a></li>
+            <li><a href="/tags-people/" title="People">People</a></li>
+            <li><a href="/tags-locations/" title="Locations">Locations</a></li>
         </ul>
     </div>
 
@@ -1051,6 +1090,7 @@
             </div>
         </div>
     </header>
+    <header class="site-image"></header>
 
 <main id="main">
   <div id="primary" class="container-fluid">
@@ -1071,12 +1111,17 @@
 
 
 
-<ul>
+<ul class="three-columns no-bullets">
     
 
     
     
     <li><a href="#andrew"> Andrew  </a></li>
+    
+
+    
+    
+    <li><a href="#disciples"> Disciples  </a></li>
     
 
     
@@ -1091,7 +1136,22 @@
 
     
     
+    <li><a href="#jacob"> Jacob  </a></li>
+    
+
+    
+    
+    <li><a href="#james-comma-brother-of-jesus"> James&comma; Brother Of Jesus  </a></li>
+    
+
+    
+    
     <li><a href="#john-the-baptist"> John The Baptist  </a></li>
+    
+
+    
+    
+    <li><a href="#joseph"> Joseph  </a></li>
     
 
     
@@ -1106,12 +1166,22 @@
 
     
     
+    <li><a href="#nathaniel"> Nathaniel  </a></li>
+    
+
+    
+    
     <li><a href="#peter"> Peter  </a></li>
     
 
     
     
     <li><a href="#pharisees"> Pharisees  </a></li>
+    
+
+    
+    
+    <li><a href="#philip"> Philip  </a></li>
     
 
     
@@ -1135,7 +1205,7 @@
 Andrew&nbsp;
 
 </h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1173,6 +1243,63 @@ Andrew&nbsp;
     
     
     
+    
+    
+</ul>
+
+
+
+
+<h3 id="disciples">
+
+Disciples&nbsp;
+
+</h3>
+<ul class="no-bullets">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <li>
+        <a href="/books/john/01/35-42.html">John 1&#58;35-42&#58; The First Disciples</a>
+    </li>
+    
+    
+    
+
+    <li>
+        <a href="/books/john/01/43-51.html">John 1&#58;43-51&#58; Call of Philip & Nathaniel</a>
+    </li>
+    
+    
+    
+    
+    
+
+    <li>
+        <a href="/books/john/02/01-05.html">John 2&#58;1-12&#58; The Wedding at Cana</a>
+    </li>
+    
+    
+    
+    
+    
+    
 </ul>
 
 
@@ -1183,7 +1310,7 @@ Andrew&nbsp;
 Elijah&nbsp;
 
 </h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1216,6 +1343,8 @@ Elijah&nbsp;
     
     
     
+    
+    
 </ul>
 
 
@@ -1226,7 +1355,7 @@ Elijah&nbsp;
 Elizabeth&nbsp;
 
 </h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1259,6 +1388,104 @@ Elizabeth&nbsp;
     
     
     
+    
+    
+</ul>
+
+
+
+
+<h3 id="jacob">
+
+Jacob&nbsp;
+
+</h3>
+<ul class="no-bullets">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <li>
+        <a href="/books/john/01/43-51.html">John 1&#58;43-51&#58; Call of Philip & Nathaniel</a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</ul>
+
+
+
+
+<h3 id="james-comma-brother-of-jesus">
+
+James&comma;&nbsp;
+
+Brother&nbsp;
+
+Of&nbsp;
+
+Jesus&nbsp;
+
+</h3>
+<ul class="no-bullets">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <li>
+        <a href="/books/john/02/01-05.html">John 2&#58;1-12&#58; The Wedding at Cana</a>
+    </li>
+    
+    
+    
+    
+    
+    
 </ul>
 
 
@@ -1273,7 +1500,7 @@ The&nbsp;
 Baptist&nbsp;
 
 </h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1331,6 +1558,53 @@ Baptist&nbsp;
     
     
     
+    
+    
+</ul>
+
+
+
+
+<h3 id="joseph">
+
+Joseph&nbsp;
+
+</h3>
+<ul class="no-bullets">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <li>
+        <a href="/books/john/01/43-51.html">John 1&#58;43-51&#58; Call of Philip & Nathaniel</a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </ul>
 
 
@@ -1341,7 +1615,7 @@ Baptist&nbsp;
 Mary&nbsp;
 
 </h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1369,9 +1643,11 @@ Mary&nbsp;
     
     
     
+    
+    
 
     <li>
-        <a href="/books/john/02/01-05.html">John 2&#58;1-12&#58; Water Into Wine</a>
+        <a href="/books/john/02/01-05.html">John 2&#58;1-12&#58; The Wedding at Cana</a>
     </li>
     
     
@@ -1389,7 +1665,7 @@ Mary&nbsp;
 Moses&nbsp;
 
 </h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1422,6 +1698,53 @@ Moses&nbsp;
     
     
     
+    
+    
+</ul>
+
+
+
+
+<h3 id="nathaniel">
+
+Nathaniel&nbsp;
+
+</h3>
+<ul class="no-bullets">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <li>
+        <a href="/books/john/01/43-51.html">John 1&#58;43-51&#58; Call of Philip & Nathaniel</a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </ul>
 
 
@@ -1432,7 +1755,7 @@ Moses&nbsp;
 Peter&nbsp;
 
 </h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1470,6 +1793,8 @@ Peter&nbsp;
     
     
     
+    
+    
 </ul>
 
 
@@ -1480,7 +1805,7 @@ Peter&nbsp;
 Pharisees&nbsp;
 
 </h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1518,6 +1843,53 @@ Pharisees&nbsp;
     
     
     
+    
+    
+</ul>
+
+
+
+
+<h3 id="philip">
+
+Philip&nbsp;
+
+</h3>
+<ul class="no-bullets">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <li>
+        <a href="/books/john/01/43-51.html">John 1&#58;43-51&#58; Call of Philip & Nathaniel</a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </ul>
 
 
@@ -1532,7 +1904,7 @@ Holy&nbsp;
 Spirit&nbsp;
 
 </h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1570,6 +1942,8 @@ Spirit&nbsp;
     
     
     
+    
+    
 </ul>
 
 
@@ -1582,7 +1956,7 @@ The&nbsp;
 Trinity&nbsp;
 
 </h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1591,6 +1965,8 @@ Trinity&nbsp;
     <li>
         <a href="/books/john/01/01-05.html">John 1&#58;1-5&#58; The Word</a>
     </li>
+    
+    
     
     
     

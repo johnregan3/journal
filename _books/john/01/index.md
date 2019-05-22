@@ -6,4 +6,3 @@ chapter_name: John 1
 weight: 43.001
 tags: [archive, single chapter]
 ---
-

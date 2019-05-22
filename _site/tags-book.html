@@ -210,13 +210,20 @@
     font-size: 24px
   }
 
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
   p {
     margin: 0 0 10px
   }
 
   ul {
     margin-top: 0;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    padding-left: 20px;
   }
 
   ul.no-bullets,
@@ -367,6 +374,13 @@
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px
+  }
+
+  @media (min-width:768px) {
+    .align-items-md-stretch {
+      -ms-flex-align: stretch !important;
+      align-items: stretch !important;
+    }
   }
 
   .col-12,
@@ -693,7 +707,6 @@
   .site-header {
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     padding: 2rem 0;
-    margin-bottom: 6rem;
     background: #fafafa
   }
 
@@ -722,6 +735,13 @@
 
   .site-header__title a:hover {
     color: #3876bd
+  }
+
+  .site-image {
+    margin-bottom: 6rem;
+    background: url('/assets/img/header.jpg') bottom right no-repeat;
+    background-size: cover;
+    height: 200px;
   }
 
   .post__item {
@@ -804,6 +824,16 @@
     background: #fff;
     border-color: rgba(0, 0, 0, .54);
     transition: color .2s ease-in-out, border-color .2s ease-in-out
+  }
+
+  .two-columns {
+    column-count: 2;
+    column-gap: 1%;
+  }
+
+  .three-columns {
+    column-count: 3;
+    column-gap: 1%;
   }
 </style>
 
@@ -1007,6 +1037,14 @@
 
             
             
+            
+
+            
+
+            
+
+            
+            
 
             
 
@@ -1019,7 +1057,8 @@
         <ul class="ul--lines">
             <li><a href="/tags-post/" title="Post Tags">Post Tags</a></li>
             <li><a href="/tags-book/" title="Book Tags">Book Tags</a></li>
-            <li><a href="/tags-people/" title="People Tags">People Tags</a></li>
+            <li><a href="/tags-people/" title="People">People</a></li>
+            <li><a href="/tags-locations/" title="Locations">Locations</a></li>
         </ul>
     </div>
 
@@ -1051,6 +1090,7 @@
             </div>
         </div>
     </header>
+    <header class="site-image"></header>
 
 <main id="main">
   <div id="primary" class="container-fluid">
@@ -1073,63 +1113,44 @@
 
 
 
-<ul>
+<ul class="three-columns no-bullets">
     
-    <li><a href="#reformed-theology"> Reformed theology </a></li>
     
-    <li><a href="#archive"> Archive </a></li>
+    
     
     <li><a href="#baptism"> Baptism </a></li>
     
+    
+    
     <li><a href="#creation"> Creation </a></li>
+    
+    
     
     <li><a href="#faith"> Faith </a></li>
     
+    
+    
     <li><a href="#glory"> Glory </a></li>
+    
+    
     
     <li><a href="#grace"> Grace </a></li>
     
+    
+    
     <li><a href="#miracles"> Miracles </a></li>
+    
+    
     
     <li><a href="#passage"> Passage </a></li>
     
+    
+    
     <li><a href="#prophecy"> Prophecy </a></li>
     
-    <li><a href="#single-book"> Single book </a></li>
-    
-    <li><a href="#single-chapter"> Single chapter </a></li>
-    
-</ul>
-
-
-
-<h3 id="reformed-theology">Reformed theology</h3>
-<ul>
     
     
-    
-    
-    
-    
-    
-    
-    <li>
-        <a href="/books/john/01/09-13.html">John 1&#58;9-13&#58; Becoming Children of God</a>
-    </li>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <li><a href="#reformed-theology"> Reformed theology </a></li>
     
     
     
@@ -1138,55 +1159,13 @@
     
 </ul>
 
-<h3 id="archive">Archive</h3>
-<ul>
-    
-    
-    <li>
-        <a href="/books/index.html">Book Notes</a>
-    </li>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <li>
-        <a href="/books/john/01/index.html">John 1</a>
-    </li>
-    
-    
-    
-    
-    
-    <li>
-        <a href="/books/john/02/index.html">John 2</a>
-    </li>
-    
-    
-    
-    <li>
-        <a href="/books/john/index.html">John</a>
-    </li>
-    
-    
-</ul>
+
+
+
+
 
 <h3 id="baptism">Baptism</h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1222,10 +1201,14 @@
     
     
     
+    
+    
 </ul>
 
+
+
 <h3 id="creation">Creation</h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1261,10 +1244,14 @@
     
     
     
+    
+    
 </ul>
+
+
 
 <h3 id="faith">Faith</h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1296,10 +1283,14 @@
     
     
     
+    
+    
 </ul>
+
+
 
 <h3 id="glory">Glory</h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1331,10 +1322,14 @@
     
     
     
+    
+    
 </ul>
 
+
+
 <h3 id="grace">Grace</h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1370,10 +1365,16 @@
     
     
     
+    
+    
 </ul>
 
+
+
 <h3 id="miracles">Miracles</h3>
-<ul>
+<ul class="no-bullets">
+    
+    
     
     
     
@@ -1397,7 +1398,7 @@
     
     
     <li>
-        <a href="/books/john/02/01-05.html">John 2&#58;1-12&#58; Water Into Wine</a>
+        <a href="/books/john/02/01-05.html">John 2&#58;1-12&#58; The Wedding at Cana</a>
     </li>
     
     
@@ -1407,8 +1408,10 @@
     
 </ul>
 
+
+
 <h3 id="passage">Passage</h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1461,10 +1464,16 @@
     
     
     
+    <li>
+        <a href="/books/john/01/43-51.html">John 1&#58;43-51&#58; Call of Philip & Nathaniel</a>
+    </li>
+    
+    
+    
     
     
     <li>
-        <a href="/books/john/02/01-05.html">John 2&#58;1-12&#58; Water Into Wine</a>
+        <a href="/books/john/02/01-05.html">John 2&#58;1-12&#58; The Wedding at Cana</a>
     </li>
     
     
@@ -1474,8 +1483,10 @@
     
 </ul>
 
+
+
 <h3 id="prophecy">Prophecy</h3>
-<ul>
+<ul class="no-bullets">
     
     
     
@@ -1500,6 +1511,12 @@
     
     
     
+    <li>
+        <a href="/books/john/01/43-51.html">John 1&#58;43-51&#58; Call of Philip & Nathaniel</a>
+    </li>
+    
+    
+    
     
     
     
@@ -1509,26 +1526,10 @@
     
 </ul>
 
-<h3 id="single-book">Single book</h3>
-<ul>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+<h3 id="reformed-theology">Reformed theology</h3>
+<ul class="no-bullets">
     
     
     
@@ -1538,50 +1539,36 @@
     
     
     <li>
-        <a href="/books/john/index.html">John</a>
+        <a href="/books/john/01/09-13.html">John 1&#58;9-13&#58; Becoming Children of God</a>
     </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 </ul>
 
-<h3 id="single-chapter">Single chapter</h3>
-<ul>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <li>
-        <a href="/books/john/01/index.html">John 1</a>
-    </li>
-    
-    
-    
-    
-    
-    <li>
-        <a href="/books/john/02/index.html">John 2</a>
-    </li>
-    
-    
-    
-    
-</ul>
+
+
+
+
 
           </div>
         </article>

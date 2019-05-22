@@ -6,3 +6,4 @@ chapter_name: false
 weight: 43
 tags: [archive, single book]
 ---
+This is some content about John

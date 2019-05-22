@@ -40,9 +40,11 @@ The following part removes dulpicated tags and invalid tags like blank tag.
 The purpose of this snippet is to list all the tags you have in your site.
 =======================
 {% endcomment %}
-<ul>
+<ul class="three-columns no-bullets">
     {% for tag in tags %}
+    {% unless tag contains 'archive' or tag contains 'single' %}
     <li><a href="#{{ tag | slugify }}"> {{ tag | capitalize }} </a></li>
+    {% endunless %}
     {% endfor %}
 </ul>
 
@@ -52,8 +54,9 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 =======================
 {% endcomment %}
 {% for tag in tags %}
+{% unless tag contains 'archive' or tag contains 'single' %}
 <h3 id="{{ tag | slugify }}">{{ tag | capitalize }}</h3>
-<ul>
+<ul class="no-bullets">
     {% for post in site.books %}
     {% if post.tags contains tag %}
     <li>
@@ -62,4 +65,5 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
     {% endif %}
     {% endfor %}
 </ul>
+{% endunless %}
 {% endfor %}

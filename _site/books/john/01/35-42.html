@@ -210,13 +210,20 @@
     font-size: 24px
   }
 
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
   p {
     margin: 0 0 10px
   }
 
   ul {
     margin-top: 0;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    padding-left: 20px;
   }
 
   ul.no-bullets,
@@ -367,6 +374,13 @@
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px
+  }
+
+  @media (min-width:768px) {
+    .align-items-md-stretch {
+      -ms-flex-align: stretch !important;
+      align-items: stretch !important;
+    }
   }
 
   .col-12,
@@ -693,7 +707,6 @@
   .site-header {
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     padding: 2rem 0;
-    margin-bottom: 6rem;
     background: #fafafa
   }
 
@@ -722,6 +735,13 @@
 
   .site-header__title a:hover {
     color: #3876bd
+  }
+
+  .site-image {
+    margin-bottom: 6rem;
+    background: url('/assets/img/header.jpg') bottom right no-repeat;
+    background-size: cover;
+    height: 200px;
   }
 
   .post__item {
@@ -804,6 +824,16 @@
     background: #fff;
     border-color: rgba(0, 0, 0, .54);
     transition: color .2s ease-in-out, border-color .2s ease-in-out
+  }
+
+  .two-columns {
+    column-count: 2;
+    column-gap: 1%;
+  }
+
+  .three-columns {
+    column-count: 3;
+    column-gap: 1%;
   }
 </style>
 
@@ -1005,6 +1035,14 @@
 
             
             
+            
+
+            
+
+            
+
+            
+            
 
             
             <li><a href="/books/">Book Notes</a></li>
@@ -1019,7 +1057,8 @@
         <ul class="ul--lines">
             <li><a href="/tags-post/" title="Post Tags">Post Tags</a></li>
             <li><a href="/tags-book/" title="Book Tags">Book Tags</a></li>
-            <li><a href="/tags-people/" title="People Tags">People Tags</a></li>
+            <li><a href="/tags-people/" title="People">People</a></li>
+            <li><a href="/tags-locations/" title="Locations">Locations</a></li>
         </ul>
     </div>
 
@@ -1051,6 +1090,7 @@
             </div>
         </div>
     </header>
+    <header class="site-image"></header>
 
 
 
@@ -1065,6 +1105,8 @@
                                 
                                 
                                 <span>&raquo;</span> <a href="/books/john/index.html">John</a>
+                                
+                                
                                 
                                 
                                 
@@ -1119,20 +1161,22 @@
                                 
                                 
                                 
+                                
+                                
                                 <span>&raquo;</span> <a href="/books/john/01/35-42.html">John 1&#58;35-42&#58; The First Disciples</a>
                             </small></p>
                         <h1 class="post__title">John 1&#58;35-42&#58; The First Disciples</h1>
                     </header>
                     <div class="post__body">
-                        <p>This is the day after John the Baptist reveals the Lamb of God.</p>
+                        <p>This is the day after John the Baptist reveals Jesus as the Lamb of God, and now his disciples begin to gather around him.</p>
 
-<p>John the Baptist is walking with two of his disciples.  John (the Apostle) tells us that one was Andrew, but leaves the other nameless.  I think this is for one of two reasons: 1. It’s been a long time since then, and John has a hard time remembering, or 2. The disciple was John himself.  This may be the case, since John never refers to himself by name or uses the first person pronoun.  Also, James/John and Peter/Andrew were close, as they worked together fishing.</p>
+<p>John the Baptist is walking with two of his disciples.  John (the Apostle) tells us that one was Andrew, but leaves the other nameless.  I think this is for one of two reasons: 1. It’s been a long time since then, and John has a hard time remembering, or 2. The disciple was John himself.  This may be the case, since John never refers to himself by name or uses the first person pronoun.  Also, John and Andrew were close, as they already worked together as fishermen.</p>
 
 <p>When Jesus walked by, John the Baptist repeats what he said the previous day: “Behold the Lamb of God!”  Then is says that the two disciples followed Jesus.  This is a literal “following,” like they walked behind him, but it may also be a spiritual one (as in they became <em>his</em> disciples).  We know this because they not only literally follow him, but they call him Rabbi, and what to know where he is staying so they can learn more about/from him.</p>
 
 <p>As stated above, Andrew was one of these disciples, and he “first” went and found his brother Simon.  Andrew says, “We have found the Messiah,” which may mean that Andrew got Jesus’s purpose wrong.  If Andrew followed the general idea of who the Messiah would be, it’s quite possible that he saw Jesus as the coming military leader of the Israelites to drive out the Romans.</p>
 
-<p>Andrew then brings Peter of Jesus, and here Jesus renames Simon to Peter.  This is a different part of the story from what is typically assumed as recorded in Matthew 16:18.  In Matthew, Jesus says, “And I tell you, you are Peter…”  I wonder if this sounded like “I tell you, you really are Peter, the rock.” This means that Jesus didn’t literally give Peter his name in the Matthew passage, but upon their first meeting in John 1.</p>
+<p>Andrew then brings Peter to Jesus, and here Jesus renames Simon to Peter.  This is a different part of the story from what is typically assumed as recorded in Matthew 16:18.  In Matthew, Jesus says, “And I tell you, you are Peter…”  I wonder if this sounded like “I tell you, you really are Peter, the rock.” This means that Jesus didn’t literally give Peter his name in the Matthew passage, but upon their first meeting in John 1.</p>
 
 
                         

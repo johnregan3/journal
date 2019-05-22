@@ -210,13 +210,20 @@
     font-size: 24px
   }
 
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
   p {
     margin: 0 0 10px
   }
 
   ul {
     margin-top: 0;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    padding-left: 20px;
   }
 
   ul.no-bullets,
@@ -367,6 +374,13 @@
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px
+  }
+
+  @media (min-width:768px) {
+    .align-items-md-stretch {
+      -ms-flex-align: stretch !important;
+      align-items: stretch !important;
+    }
   }
 
   .col-12,
@@ -693,7 +707,6 @@
   .site-header {
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     padding: 2rem 0;
-    margin-bottom: 6rem;
     background: #fafafa
   }
 
@@ -722,6 +735,13 @@
 
   .site-header__title a:hover {
     color: #3876bd
+  }
+
+  .site-image {
+    margin-bottom: 6rem;
+    background: url('/assets/img/header.jpg') bottom right no-repeat;
+    background-size: cover;
+    height: 200px;
   }
 
   .post__item {
@@ -804,6 +824,16 @@
     background: #fff;
     border-color: rgba(0, 0, 0, .54);
     transition: color .2s ease-in-out, border-color .2s ease-in-out
+  }
+
+  .two-columns {
+    column-count: 2;
+    column-gap: 1%;
+  }
+
+  .three-columns {
+    column-count: 3;
+    column-gap: 1%;
   }
 </style>
 
@@ -1007,6 +1037,14 @@
 
             
             
+            
+
+            
+
+            
+
+            
+            
 
             
 
@@ -1019,7 +1057,8 @@
         <ul class="ul--lines">
             <li><a href="/tags-post/" title="Post Tags">Post Tags</a></li>
             <li><a href="/tags-book/" title="Book Tags">Book Tags</a></li>
-            <li><a href="/tags-people/" title="People Tags">People Tags</a></li>
+            <li><a href="/tags-people/" title="People">People</a></li>
+            <li><a href="/tags-locations/" title="Locations">Locations</a></li>
         </ul>
     </div>
 
@@ -1051,6 +1090,7 @@
             </div>
         </div>
     </header>
+    <header class="site-image"></header>
 
 <main id="main">
   <div id="primary" class="container-fluid">
