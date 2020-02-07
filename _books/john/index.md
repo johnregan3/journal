@@ -7,9 +7,11 @@ weight: 43
 tags: [archive, single book]
 people: [Zebedee, Salome]
 ---
-One of the major themes in this book is the demand for Signs.  People over and again wanted to have a good show, but when Jesus spoke hard things the people left.  A perfect example of this is the entire story around the feeding of the 5,000 (v6:60 ff). _See Jn 2:18, 4:48, 6:30, 7:31, etc._
+One of the major themes in this book is the demand for **Signs**.  People over and again wanted to have a good show, but when Jesus spoke hard things the people left.  A perfect example of this is the entire story around the feeding of the 5,000 (v6:60 ff). _See Jn 2:18, 4:48, 6:30, 7:31, etc._
 
 Of course, perhaps the largest theme is the Holy Spirit.   People chose to live by the Law, and Jesus (re)introduces them to the Spirit of God (5:39, 7:39)
+
+Another theme is **God's Timing**.  Phrases like "My time has not yet come," and "the time is coming and is now here," and "The hour..." are used throughout the book.
 
 **About John the Apostle**
 
