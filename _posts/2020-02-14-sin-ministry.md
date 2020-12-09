@@ -37,7 +37,7 @@ This man is our brother.  He's walked with us through some tremendous issues in 
 
 ### How We Faced Our Community
 
-The staff member resigned/confessed on a Monday evening.  The remainging elders stayed for an initial discussion/debrief.  During this discussion we decided that we needed to notify our congregation with as much information as possible as soon as possible.  We did this for two reasons: to avoid even the appearance of a cover-up, and also to prevent bad information from being spread.  What we discovered later was this early meeting would allow us to set the tone for the congregation: one of grief over anger, and restoration over shunning.  We decided that pre-empting our regular Wednesday night activities would be our best option, as it was a time when the core members of our church were already in the building, plus it was soon enough that we could head off any rumors.
+The staff member resigned/confessed on a Monday evening.  The remaining elders stayed for an initial discussion/debrief.  During this discussion we decided that **we needed to notify our congregation with as much information as possible as soon as possible.  We did this for two reasons: to avoid even the appearance of a cover-up, and also to prevent bad information from being spread.**  What we discovered later was this early meeting would allow us to set the tone for the congregation: one of grief over anger, and restoration over shunning.  We decided that pre-empting our regular Wednesday night activities would be our best option, as it was a time when the core members of our church were already in the building, plus it was soon enough that we could head off any rumors.
 
 On Tuesday night we Elders met along with our wives to further refine our message, as well as assign roles for Wednesday night (since our Associate Pastor also led the Youth Ministry).  My wife and I volunteered to tell the Youth while the other two elders would explain the situation to the adults.  Children would not be told anything so that their parents could use their judgment in how to explain this to their kids.
 
@@ -45,11 +45,11 @@ We also assigned jobs to personally notifying church leaders (official or otherw
 
 So, Wendesday night, literally 48 hours after we ourselves got the news, we met with the church.  The other two Elders met with the adults, while me, my wife, and an adult volunteer met with the teenagers. (Naturally, I can only share details about my own experience that night)
 
-[It was like funeral for the students taht knew. Hugging, hushed tones]
+[It was like funeral for the students that knew. Hugging, hushed tones]
 
 I began by telling the teens that tonight we were going to find out how big they believed Jesus is.  I also led by telling them that I had bad news for them.  With this in mind, I didn't make them wait long anticipating what the bad news would be.  I did, however, take a moment to explain who I was (for those I didn't know), as well as our role as Elders.  I said we were shepherds, that we lead, guide, and protect the people.
 
-Then I just said it: "David resigned Monday night.  He and Rebecca have been having a sexual affair."  It was hard, but I wanted to be as direct as possible so there was no misunderstanding about what had been going on.  Also, avoiding ambiguity showed them respect as young adults.
+Then I just said it: "[This man] resigned Monday night.  He and [this woman] have been having a sexual affair."  It was hard, but I wanted to be as direct as possible so there was no misunderstanding about what had been going on.  Also, avoiding ambiguity showed them respect as young adults.
 
 I had a direction in which I wanted to take the meeting, but it required them some time to process the news.  So, I told a story from my own experience about this that might be helpful to those still listening and would also allow others to let the news soak in.
 
@@ -73,9 +73,9 @@ It was an incredible night.  Afterward several of the teens (including my own ki
 
 ### Interacting with the Families Involved
 
-As part of the youth's  ministry to others, my boys coordinated with a friend to go to by groceries for the former associate pastor's family, as they are close friends.d  We met with another young man at the grocery store on Saturday morning and went shopping.  They spent their own money to buy fun snacks and candy and chocolate milk and unicorn mac 'n cheese and Monsters.  We delivered it to the man's family and spent a while talking with his wife about her situation.
+As part of the youth's ministry to others, my boys coordinated with a friend to go to by groceries for the former associate pastor's family, as they are close friends.  We met with another young man at the grocery store on Saturday morning and went shopping.  They spent their own money to buy fun snacks and candy and chocolate milk and unicorn mac 'n cheese and Monsters.  We delivered it to the man's family and spent a while talking with his wife about her situation.
 
-Of course, she is devistated, completely broken and humiliated.  She'd been fooled, and that realization hurt.  Of course, no one holds her responsible for what her husband did (and she knows that!), yet she still feels embarassed.
+She is devistated, completely broken and humiliated.  She'd been fooled, and that realization hurt.  Of course, no one holds her responsible for what her husband did (and she knows that!), yet she still feels embarassed.
 
 Her strongest emotion at the time was anger, and I think that makes a lot of sense.  She's said repeatedly that he doesn't really understand the magnitude of what he's done.
 
